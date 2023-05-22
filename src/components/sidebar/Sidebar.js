@@ -6,6 +6,7 @@ const Sidebar = () => {
       <div className='top'>
         <span className='logo'>Admin Dashboard</span>
       </div>
+      <hr />
       <div className='center'>
         <ul>
           <li>
