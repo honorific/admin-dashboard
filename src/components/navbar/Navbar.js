@@ -13,28 +13,28 @@ const Navbar = () => {
       <div className='wrapper'>
         <div className='search'>
           <input type='text' placeholder='search...' />
-          <SearchOutlinedIcon />
+          <SearchOutlinedIcon className='icon' />
         </div>
 
         <div className='items'>
           <div className='item'>
-            <LanguageOutlinedIcon />
+            <LanguageOutlinedIcon className='icon' />
             English
           </div>
           <div className='item'>
-            <DarkModeOutlinedIcon />
+            <DarkModeOutlinedIcon className='icon' />
           </div>
           <div className='item'>
-            <FullscreenExitOutlinedIcon />
+            <FullscreenExitOutlinedIcon className='icon' />
           </div>
           <div className='item'>
-            <NotificationsNoneOutlinedIcon />
+            <NotificationsNoneOutlinedIcon className='icon' />
           </div>
           <div className='item'>
-            <ChatBubbleOutlineOutlinedIcon />
+            <ChatBubbleOutlineOutlinedIcon className='icon' />
           </div>
           <div className='item'>
-            <ListOutlinedIcon />
+            <ListOutlinedIcon className='icon' />
           </div>
         </div>
       </div>
