@@ -6,6 +6,7 @@ import FullscreenExitOutlinedIcon from '@mui/icons-material/FullscreenExitOutlin
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined'
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined'
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined'
+import img from '../../img/images.jpeg'
 
 const Navbar = () => {
   return (
@@ -35,6 +36,9 @@ const Navbar = () => {
           </div>
           <div className='item'>
             <ListOutlinedIcon className='icon' />
+          </div>
+          <div className='item'>
+            <img src={img} className='avatar' />
           </div>
         </div>
       </div>
