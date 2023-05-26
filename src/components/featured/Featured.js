@@ -19,6 +19,7 @@ const Featured = () => {
         <p className='desc'>
           previous transaction processing. Last payment may not be included
         </p>
+        <div className='summary'></div>
       </div>
     </div>
   )
