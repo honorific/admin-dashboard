@@ -26,7 +26,7 @@ const Chart = () => {
             <stop offset='95%' stopColor='#8884d8' stopOpacity={0} />
           </linearGradient>
         </defs>
-        <XAxis dataKey='name' />
+        <XAxis dataKey='name' stroke='gray' />
         <CartesianGrid strokeDasharray='3 3' />
         <Tooltip />
         <Area
