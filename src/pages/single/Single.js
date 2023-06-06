@@ -18,8 +18,32 @@ const Single = () => {
                 alt=''
                 className='itemImg'
               />
+              <div className='details'>
+                <h1 className='itemTitle'>Jane doe</h1>
+
+                <div className='detailItem'>
+                  <span className='itemKey'>Email:</span>
+                  <span className='itemValue'>janedoe@gmail.com</span>
+                </div>
+
+                <div className='detailItem'>
+                  <span className='itemKey'>Phone:</span>
+                  <span className='itemValue'>+1 2223 42 16</span>
+                </div>
+
+                <div className='detailItem'>
+                  <span className='itemKey'>Address:</span>
+                  <span className='itemValue'>
+                    Elton st. 234 Garden Yd, New york
+                  </span>
+                </div>
+
+                <div className='detailItem'>
+                  <span className='itemKey'>Country:</span>
+                  <span className='itemValue'>USA</span>
+                </div>
+              </div>
             </div>
-            details
           </div>
           <div className='right'></div>
         </div>
