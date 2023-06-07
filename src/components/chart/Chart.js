@@ -10,12 +10,12 @@ const data = [
   {name: 'June', Total: 1700},
 ]
 
-const Chart = ({height}) => {
+const Chart = ({height, width, title}) => {
   return (
     <div className='chart'>
-      <div className='title'>Last 6 months (Revenue)</div>
+      <div className='title'>{title}</div>
       <AreaChart
-        width={730}
+        width={width}
         height={height}
         data={data}
         margin={{top: 10, right: 30, left: 0, bottom: 0}}

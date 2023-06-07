@@ -47,7 +47,11 @@ const Single = () => {
             </div>
           </div>
           <div className='right'>
-            <Chart height={220} />
+            <Chart
+              height={220}
+              width={650}
+              title='User Spending (last 6 months)'
+            />
           </div>
         </div>
         <div className='bottom'></div>
