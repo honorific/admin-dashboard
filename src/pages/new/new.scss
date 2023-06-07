@@ -1,0 +1,23 @@
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+
+    .top,
+    .bottom {
+      padding: 10px;
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      margin: 20px;
+      display: flex;
+
+      .left {
+        flex: 1;
+      }
+      .right {
+        flex: 2;
+      }
+    }
+  }
+}
