@@ -22,7 +22,7 @@ const New = () => {
           <div className='right'>
             <form>
               <label htmlFor='file'>
-                <DriveFolderUploadIcon />
+                Image: <DriveFolderUploadIcon className='icon' />
               </label>
               <input type='file' id='file' style={{display: 'none'}}></input>
               <div className='formInput'>
