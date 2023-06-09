@@ -21,10 +21,12 @@ const New = () => {
           </div>
           <div className='right'>
             <form>
-              <label htmlFor='file'>
-                Image: <DriveFolderUploadIcon className='icon' />
-              </label>
-              <input type='file' id='file' style={{display: 'none'}}></input>
+              <div className='formInput'>
+                <label htmlFor='file'>
+                  Image: <DriveFolderUploadIcon className='icon' />
+                </label>
+                <input type='file' id='file' style={{display: 'none'}}></input>
+              </div>
               <div className='formInput'>
                 <label>UserName</label>
                 <input type='text' placeholder='john_doe' />
@@ -53,7 +55,7 @@ const New = () => {
                 <label>Country</label>
                 <input type='text' placeholder='USA' />
               </div>
-              <button>send button</button>
+              <button>send</button>
             </form>
           </div>
         </div>
