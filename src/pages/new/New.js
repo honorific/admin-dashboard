@@ -3,14 +3,14 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import './new.scss'
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload'
 
-const New = () => {
+const New = ({inputs, title}) => {
   return (
     <div className='new'>
       <Sidebar />
       <div className='newContainer'>
         <Navbar />
         <div className='top'>
-          <h1>Add new user</h1>
+          <h1>{title}</h1>
         </div>
         <div className='bottom'>
           <div className='left'>
@@ -27,34 +27,14 @@ const New = () => {
                 </label>
                 <input type='file' id='file' style={{display: 'none'}}></input>
               </div>
-              <div className='formInput'>
-                <label>UserName</label>
-                <input type='text' placeholder='john_doe' />
-              </div>
-              <div className='formInput'>
-                <label>Name and surname</label>
-                <input type='text' placeholder='John doe' />
-              </div>
-              <div className='formInput'>
-                <label>Email</label>
-                <input type='email' placeholder='john@example.com' />
-              </div>
-              <div className='formInput'>
-                <label>Phone number</label>
-                <input type='text' placeholder='+1 234 567 89' />
-              </div>
-              <div className='formInput'>
-                <label>Password</label>
-                <input type='password' />
-              </div>
-              <div className='formInput'>
-                <label>Adress</label>
-                <input type='text' placeholder='Elton st. 216 New york' />
-              </div>
-              <div className='formInput'>
-                <label>Country</label>
-                <input type='text' placeholder='USA' />
-              </div>
+              {inputs.map((input) => {
+                return (
+                  <div className='formInput' key={input.id}>
+                    <label htmlFor='file'>{input.label}</label>
+                    <input type={input.type} placeholder={input.placeholder} />
+                  </div>
+                )
+              })}
               <button>send</button>
             </form>
           </div>
