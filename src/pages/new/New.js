@@ -18,7 +18,38 @@ const New = () => {
               alt=''
             />
           </div>
-          <div className='right'>right</div>
+          <div className='right'>
+            <form>
+              <div className='formInput'>
+                <label>UserName</label>
+                <input type='text' placeholder='john_doe' />
+              </div>
+              <div className='formInput'>
+                <label>Name and surname</label>
+                <input type='text' placeholder='John doe' />
+              </div>
+              <div className='formInput'>
+                <label>Email</label>
+                <input type='email' placeholder='john@example.com' />
+              </div>
+              <div className='formInput'>
+                <label>Phone number</label>
+                <input type='text' placeholder='+1 234 567 89' />
+              </div>
+              <div className='formInput'>
+                <label>Password</label>
+                <input type='password' />
+              </div>
+              <div className='formInput'>
+                <label>Adress</label>
+                <input type='text' placeholder='Elton st. 216 New york' />
+              </div>
+              <div className='formInput'>
+                <label>Country</label>
+                <input type='text' placeholder='USA' />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
