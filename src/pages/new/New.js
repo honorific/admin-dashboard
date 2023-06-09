@@ -21,10 +21,10 @@ const New = () => {
           </div>
           <div className='right'>
             <form>
-              <label htmlfor='file'>
+              <label htmlFor='file'>
                 <DriveFolderUploadIcon />
               </label>
-              <input type='file' id='file'></input>
+              <input type='file' id='file' style={{display: 'none'}}></input>
               <div className='formInput'>
                 <label>UserName</label>
                 <input type='text' placeholder='john_doe' />
