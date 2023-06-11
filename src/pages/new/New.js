@@ -4,6 +4,7 @@ import './new.scss'
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload'
 
 const New = ({inputs, title}) => {
+  console.log(inputs)
   return (
     <div className='new'>
       <Sidebar />
