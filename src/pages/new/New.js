@@ -1,11 +1,12 @@
+import {useState} from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 import './new.scss'
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload'
 
 const New = ({inputs, title}) => {
-  console.log("Inputs are: ",inputs)
-  console.log("Titile is: ",title)
+  const [file, setFile] = useState('')
+
   return (
     <div className='new'>
       <Sidebar />
@@ -17,7 +18,11 @@ const New = ({inputs, title}) => {
         <div className='bottom'>
           <div className='left'>
             <img
-              src='https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg'
+              src={
+                file
+                  ? URL.createObjectURL(file)
+                  : 'https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg'
+              }
               alt=''
             />
           </div>
@@ -27,7 +32,12 @@ const New = ({inputs, title}) => {
                 <label htmlFor='file'>
                   Image: <DriveFolderUploadIcon className='icon' />
                 </label>
-                <input type='file' id='file' style={{display: 'none'}}></input>
+                <input
+                  type='file'
+                  id='file'
+                  style={{display: 'none'}}
+                  onChange={(e) => setFile(e.target.files[0])}
+                />
               </div>
               {inputs.map((input) => {
                 return (
