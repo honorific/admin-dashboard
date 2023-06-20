@@ -42,7 +42,7 @@ const New = ({inputs, title}) => {
               {inputs.map((input) => {
                 return (
                   <div className='formInput' key={input.id}>
-                    <label htmlFor='file'>{input.label}</label>
+                    <label htmlFor='text'>{input.label}</label>
                     <input type={input.type} placeholder={input.placeholder} />
                   </div>
                 )
