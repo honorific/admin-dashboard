@@ -76,7 +76,10 @@ const List = () => {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow key={row.id}>
+            <TableRow
+              key={row.id}
+              className='tableRow'
+            >
               <TableCell className='tableCell'>{row.id}</TableCell>
               <TableCell className='tableCell'>
                 <div className='cellWrapper'>
