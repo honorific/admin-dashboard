@@ -3,6 +3,14 @@
   color: rgb(156, 156, 156);
 
   .chartGrid {
-    stroke: rgba(228, 228, 228, 0.219);
+    stroke: rgba(40, 40, 40, 0.477);
+  }
+
+  .table {
+    background-color: #111;
+
+    .tableCell {
+      color: gray;
+    }
   }
 }
