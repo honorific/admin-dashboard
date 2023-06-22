@@ -3,12 +3,13 @@
   color: rgb(156, 156, 156);
 
   .chartGrid {
-    stroke: rgba(40, 40, 40, 0.477);
+    stroke: rgba(185, 185, 185, 0.477);
   }
 
   .table {
     background-color: #111;
 
+    .thTableRow,
     .tableRow {
       & td,
       & th {
@@ -22,6 +23,32 @@
 
   .navbar {
     color: #999;
-    border-color: #999;
+    border-color: #333;
+
+    .search {
+      border-color: gray;
+    }
+  }
+
+  .sidebar {
+    background-color: #111;
+    border-color: #333;
+
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
+    hr {
+      border-color: #333;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
   }
 }
