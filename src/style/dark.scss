@@ -32,5 +32,11 @@
   .sidebar {
     background-color: #111;
     border-color: #333;
+
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
   }
 }
