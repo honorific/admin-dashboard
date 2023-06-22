@@ -42,5 +42,13 @@
     hr {
       border-color: #333;
     }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
   }
 }
